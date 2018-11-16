@@ -8,3 +8,5 @@ To run the gpdc forward modelling calculation in Matlab, within the MuLTI algori
 To run the MuLTI Matlab codes, .m files, the corresponding platform based gpdc mex file must be in the active Matlab working directory along with the Matlab functions ‘thicknesses_and_priors’ and ‘whichnuclei’ and the input dispersion curve data files.
 
 The input dispersion curve data files are .mat files with dispersion curve picks saved as a column vector variable called “data” with column 1 being frequency in Hertz and column 2 being phase velocity in m/s. The fitting error is determined from the half width of the dispersion curve image, this is saved as a column vector variable called “half_width” with column 1 being frequency and column 2 being the half width of the dispersion curve in m/s.
+
+DOI 10.5281/zenodo.1489959
