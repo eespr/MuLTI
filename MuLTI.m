@@ -671,7 +671,7 @@ len = sizeCI(1,1);
 wid = sizeCI(1,2);
 CI_density_limitN = zeros(len,wid);
 for i = 1:len
-    m = max(CI_density_limit(i,:));
+    m = sum(CI_density_limit(i,:));
     for j = 1:wid
         CI_density_limitN(i,j) = CI_density_limit(i,j)/m;
     end
@@ -715,8 +715,9 @@ title('Shear Wave Velocity Plot');
 ylabel('Depth (m)');
 % Create xlabel
 xlabel('Vs (m/s)');
-%set(gca,'Ydir','normal')
-set(h,'Interpreter','none','Location','NorthOutside');
+colormap jet
+colorbar
+caxis([0 0.4])
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Plot best model modal dispersion curves and observed data 
