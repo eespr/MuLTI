@@ -542,6 +542,7 @@ for s=1:nsample
         nuclei_vs = nuclei_vs_prop;
         nuclei_vp = nuclei_vp_prop;
         like=like_prop;
+     end
         for i=1:dis
             ind=whichnuclei(nuclei_depths(1:npt+num_layers),x(i),num_layers,priors);
             hist_vs(i)=nuclei_vs(ind);
@@ -549,7 +550,6 @@ for s=1:nsample
         [N]=histcounts2(x,hist_vs',x,y);
         vs_edge=y(1:(dis-1));
         depth_edge=x(1:(dis-1));
-    end
     
            
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -597,9 +597,7 @@ for s=1:nsample
             end
         end
         
-        if accept==1 %do histergram on CI density Vs accepted
             CI_density = CI_density + N;
-        end
         
     end %if burn-in
     
