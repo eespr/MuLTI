@@ -10,7 +10,7 @@ To run the gpdc forward modelling calculation in Matlab, within the MuLTI algori
 To run the MuLTI Matlab code ('MuLTI.m') the corresponding platform based gpdc mex file must be in the active Matlab working directory along with the Matlab functions ‘thicknesses_and_priors.m’ and ‘whichnuclei.m’.
 
 ## Input data (MuLTI)
-The input dispersion curve data files are .mat files with dispersion curve picks saved as a column vector variable called “data” with column 1 being frequency in Hertz and column 2 being phase velocity in m/s. The fitting error is determined from the half width of the dispersion curve image, this is saved as a column vector variable called “half_width” with column 1 being frequency and column 2 being the half width of the dispersion curve in m/s.
+The input dispersion curve data files are .mat files with dispersion curve picks saved as a column vector variable called “data” with column 1 frequency in Hertz and column 2 phase velocity in m/s. The fitting error is determined from the half width of the dispersion curve image, this is saved as a column vector variable called “half_width” with column 1 frequency and column 2 the half width of the dispersion curve in m/s.
 
 # MuLTI II and III
 MuLTI II has been developed to address a limitation in the original MuLTI code, specifically that Vp must be fixed. MuLTI II overcomes this limitation by allowing Vp to vary, together with an estimate of its uncertainty. Here, density is fixed using the same methodology applied in the original MuLTI code. This tool is useful when the Vp structure of the subsurface is known, for example, from seismic refraction investigations.
@@ -22,7 +22,7 @@ MuLTI II and III setup procedures are very similar to the original MuLTI code, d
 
 ## Input data (MuLTI II and III)
 The input dispersion curve and fitting error data format are the same as for the original MuLTI code.
-The input Vp profiles are saved as .mat files containing a column vector variable called “vpdata” with column 1 being Vp depths in meters, column 2 being mean Vp value in m/s and column 3 being one standard deviation (estimated error of Vp).
-The input density profiles are saved as .mat files containing a column vector variable called “dendata” with column 1 being density depths in meters, column 2 being mean density value in g/cc and column 3 being one standard deviation (estimated error of density).
+The input Vp profiles are saved as .mat files containing a column vector variable called “vpdata” with column 1 Vp depths in meters, column 2 mean Vp value in m/s and column 3 one standard deviation (estimated error of Vp).
+The input density profiles are saved as .mat files containing a column vector variable called “dendata” with column 1 density depths in meters, column 2 mean density value in g/cm3 and column 3 one standard deviation (estimated error of density).
 
 
