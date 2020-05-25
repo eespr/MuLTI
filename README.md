@@ -7,7 +7,7 @@ The MuLTI algorithm was developed in Matlab version 2017a, therefore all Matlab 
 To run the gpdc forward modelling calculation in Matlab, within the MuLTI algorithm, the gpdc Geospy software version 2.10 must be installed in the Matlab bin directory. This can be obtained from http://www.geopsy.org/. The mex interface has been mostly tested on CentOS 7, and Windows 7, with Matlab 2017a and geopsy 2.10.0. Further details and instructions on how to compile and use the gpdc mex file can be found in the corresponding folders and at the link: https://github.com/cemac/MEX-gpdc. If working on a Linux based platform the gpdc mex file created for Linux specifically must be compiled in the Matlab working directory and then the gpdc function can be called in Matlab. If working on a Windows platform the gpdc mex files created for windows specifically does not need compiled and can just be called in the matlab working directory. 
 
 ## Functions
-To run the MuLTI Matlab code, MuLTI.m, the corresponding platform based gpdc mex file must be in the active Matlab working directory along with the Matlab functions ‘thicknesses_and_priors’ and ‘whichnuclei’ and the input dispersion curve data files.
+To run the MuLTI Matlab code ('MuLTI.m') the corresponding platform based gpdc mex file must be in the active Matlab working directory along with the Matlab functions ‘thicknesses_and_priors.m’ and ‘whichnuclei.m’.
 
 ## Input data (MuLTI)
 The input dispersion curve data files are .mat files with dispersion curve picks saved as a column vector variable called “data” with column 1 being frequency in Hertz and column 2 being phase velocity in m/s. The fitting error is determined from the half width of the dispersion curve image, this is saved as a column vector variable called “half_width” with column 1 being frequency and column 2 being the half width of the dispersion curve in m/s.
@@ -18,7 +18,7 @@ MuLTI II has been developed to address a limitation in the original MuLTI code, 
 MuLTI III has been developed further to address both key limitations in the original MuLTI code, specifically that Vp and density must be fixed. MuLTI III overcomes this limitation by allowing both Vp and density to vary, together with estimates of their curves uncertainty. This tool is useful when the Vp and density structures of the subsurface are known, for example, from seismic refraction investigations and borehole measurements.
 
 ## Functions
-MuLTI II and III setup procedures are very similar to the original MuLTI code, described above. However, the function “thickneses_and_priors_III.m” is now needed for both MuLTI II ('MuLTI_II.m') and III ('MuLTI_III.m') instead of the original “thickneses_and_priors.m”. 
+MuLTI II and III setup procedures are very similar to the original MuLTI code, described above. However, the function “thickneses_and_priors_III.m” is now needed for both MuLTI II ('MuLTI_II.m') and III ('MuLTI_III.m') instead of the original “thickneses_and_priors.m”. The original function ‘whichnuclei.m’ is still needed also.
 
 ## Input data (MuLTI II and III)
 The input dispersion curve and fitting error data format are the same as for the original MuLTI code.
