@@ -18,7 +18,7 @@ MuLTI II has been developed to address a limitation in the original MuLTI code, 
 MuLTI III has been developed further to address both key limitations in the original MuLTI code, specifically that Vp and density must be fixed. MuLTI III overcomes this limitation by allowing both Vp and density to vary, together with estimates of their curves uncertainty. This tool is useful when the Vp and density structures of the subsurface are known, for example, from seismic refraction investigations and borehole measurements.
 
 ## Functions
-MuLTI II and III setup procedures are very similar to the original MuLTI code, described above. However, the function “thickneses_and_priors_III.m” is now needed for both MuLTI II and III instead of the original “thickneses_and_priors.m”. 
+MuLTI II and III setup procedures are very similar to the original MuLTI code, described above. However, the function “thickneses_and_priors_III.m” is now needed for both MuLTI II ('MuLTI_II.m') and III ('MuLTI_III.m') instead of the original “thickneses_and_priors.m”. 
 
 ## Input data (MuLTI II and III)
 The input dispersion curve and fitting error data format are the same as for the original MuLTI code.
