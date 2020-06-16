@@ -1,5 +1,5 @@
 function [thickness, layer_density, layer_vp, layer_vs, priors_OK] = ...
-    thicknesses_and_priors(nuclei_positions_unsorted, nuclei_density, nuclei_vp, nuclei_vs, num_floating_nuclei, num_layers, priors)
+    thicknesses_and_priors_III(nuclei_positions_unsorted, nuclei_density, nuclei_vp, nuclei_vs, num_floating_nuclei, num_layers, priors)
 % Function layers_and_priors
 % (i) Tests prior information
 % (ii) If all priors OK, converts from Voronoi description to layer description
