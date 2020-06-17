@@ -23,4 +23,4 @@ The input dispersion curve and fitting error data format are the same as for the
 The input Vp profiles are saved as .mat files containing a column vector variable called “vpdata” with column 1 Vp depths in meters, column 2 mean Vp value in m/s and column 3 one standard deviation (estimated error of Vp).
 The input density profiles are saved as .mat files containing a column vector variable called “dendata” with column 1 density depths in meters, column 2 mean density value in g/cm3 and column 3 one standard deviation (estimated error of density).
 
-
+(Also available from https://zenodo.org/record/3898898 DOI:10.5281/zenodo.3898898)
